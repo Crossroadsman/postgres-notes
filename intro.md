@@ -38,6 +38,16 @@ Once in `psql` and connected to the `postgres` database, run the password metaco
 \password
 ```
 
+#### Create a database ####
+
+```SQL
+CREATE DATABASE <databaseName>;
+```
+
+By default, the create database command allocates a new database by cloning the built-in system database *template1*.
+
+You can confirm the existence of the newly-created database by using the `\list` (can be abbreviated as `\l`) metacommand.
+
 
 
 [i.i.os01]: https://github.com/Crossroadsman/ServerAdmin
