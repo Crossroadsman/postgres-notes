@@ -49,5 +49,24 @@ By default, the create database command allocates a new database by cloning the 
 You can confirm the existence of the newly-created database by using the `\list` (can be abbreviated as `\l`) metacommand.
 
 
+#### Connect to a new database ####
+
+Once the new DB is created, we want to connect to it. We can do it directly from psql or we can log in from the command line.
+
+To connect from the command line, we simply repeat the command from Initial Configuration section but specify the db we want to which 
+we want to connect:
+
+```
+sudo -u postgres psql <databaseName>
+```
+
+To connect from within psql:
+
+```SQL
+\connect <databaseName>
+```
+
+(Note that `\connect` can be abbreviated as `\c`)
+
 
 [i.i.os01]: https://github.com/Crossroadsman/ServerAdmin
